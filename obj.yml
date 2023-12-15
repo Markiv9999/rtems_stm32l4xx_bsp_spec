@@ -11,10 +11,6 @@ install:
 - destination: ${BSP_INCLUDEDIR}
   source:
   - bsps/arm/stm32l4/include/bsp.h
-- destination: ${BSP_INCLUDEDIR}/bsp
-  source:
-  - bsps/arm/stm32l4/include/bsp/stm32l4.h
-  - bsps/arm/stm32l4/include/bsp/usart.h
 - destination: ${BSP_LIBDIR}
   source:
   - bsps/arm/stm32l4/start/linkcmds.stm32l4
@@ -24,14 +20,7 @@ source:
 - bsps/arm/shared/irq/irq-armv7m.c
 - bsps/arm/shared/irq/irq-dispatch-armv7m.c
 - bsps/arm/shared/start/bsp-start-memcpy.S
-  #- bsps/arm/stm32l4/console/console-config.c
-  #- bsps/arm/stm32l4/console/usart.c
-  #- bsps/arm/stm32l4/start/bspreset.c
-- bsps/arm/stm32l4/start/bspstart.c
-- bsps/arm/stm32l4/start/bspstarthooks.c
-  #- bsps/arm/stm32l4/start/io.c
-  #- bsps/arm/stm32l4/start/rcc.c
-  #- bsps/arm/stm32l4/start/start-config-io.c
+- bsps/arm/stm32f4/start/bspstarthook.c
 - bsps/shared/cache/nocache.c
 - bsps/shared/dev/btimer/btimer-cpucounter.c
 - bsps/shared/dev/cpucounter/cpucounterfrequency.c
