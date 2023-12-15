@@ -12,8 +12,6 @@ includes: []
 install: []
 links:
 - role: build-dependency
-  uid: ../../opto2
-- role: build-dependency
   uid: grp
 source: []
 type: build
