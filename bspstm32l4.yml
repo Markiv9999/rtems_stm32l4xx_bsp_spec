@@ -1,6 +1,6 @@
 SPDX-License-Identifier: CC-BY-SA-4.0 OR BSD-2-Clause
 arch: arm
-bsp: stm32f4
+bsp: stm32l4
 build-type: bsp
 cflags: []
 copyrights:
