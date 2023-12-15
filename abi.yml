@@ -11,7 +11,8 @@ default:
   value:
   - -mcpu=cortex-m4
   - -mthumb
-  - -mfloat-abi=hard
+  # TODO: determine if enaable
+  #  - -mfloat-abi=hard
   - -mfpu=auto
 description: |
   ABI flags
