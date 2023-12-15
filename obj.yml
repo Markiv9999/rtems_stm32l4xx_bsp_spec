@@ -1,0 +1,48 @@
+SPDX-License-Identifier: CC-BY-SA-4.0 OR BSD-2-Clause
+build-type: objects
+cflags: []
+copyrights:
+- Copyright (C) 2020 embedded brains GmbH & Co. KG
+cppflags: []
+cxxflags: []
+enabled-by: true
+includes: []
+install:
+- destination: ${BSP_INCLUDEDIR}
+  source:
+  - bsps/arm/stm32l4/include/bsp.h
+- destination: ${BSP_INCLUDEDIR}/bsp
+  source:
+  - bsps/arm/stm32l4/include/bsp/stm32l4.h
+  - bsps/arm/stm32l4/include/bsp/usart.h
+- destination: ${BSP_LIBDIR}
+  source:
+  - bsps/arm/stm32l4/start/linkcmds.stm32l4
+links: []
+source:
+- bsps/arm/shared/clock/clock-armv7m.c
+- bsps/arm/shared/irq/irq-armv7m.c
+- bsps/arm/shared/irq/irq-dispatch-armv7m.c
+- bsps/arm/shared/start/bsp-start-memcpy.S
+  #- bsps/arm/stm32l4/console/console-config.c
+  #- bsps/arm/stm32l4/console/usart.c
+  #- bsps/arm/stm32l4/start/bspreset.c
+- bsps/arm/stm32l4/start/bspstart.c
+- bsps/arm/stm32l4/start/bspstarthooks.c
+  #- bsps/arm/stm32l4/start/io.c
+  #- bsps/arm/stm32l4/start/rcc.c
+  #- bsps/arm/stm32l4/start/start-config-io.c
+- bsps/shared/cache/nocache.c
+- bsps/shared/dev/btimer/btimer-cpucounter.c
+- bsps/shared/dev/cpucounter/cpucounterfrequency.c
+- bsps/shared/dev/cpucounter/cpucounterread.c
+- bsps/shared/dev/getentropy/getentropy-cpucounter.c
+- bsps/shared/dev/serial/legacy-console-control.c
+- bsps/shared/dev/serial/legacy-console-select.c
+- bsps/shared/dev/serial/legacy-console.c
+- bsps/shared/irq/irq-default-handler.c
+- bsps/shared/start/bspfatal-default.c
+- bsps/shared/start/gettargethash-default.c
+- bsps/shared/start/sbrk.c
+- bsps/shared/start/stackalloc.c
+type: build
