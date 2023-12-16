@@ -42,8 +42,8 @@ source:
 - bsps/shared/dev/btimer/btimer-cpucounter.c
   #- bsps/m68k/av5282/clock/clock.c
 - bsps/arm/shared/clock/clock-armv7m.c
-- bsps/arm/stm32/console/console.c
-- bsps/arm/stm32/start/bspstart.c
+- bsps/arm/stm32l4/console/console.c
+- bsps/arm/stm32l4/start/bspstart.c
   #- bsps/m68k/av5282/start/init5282.c no substitute
   #- bsps/m68k/shared/cache/cache-mcf5282.c no substitute
   #- bsps/m68k/shared/m68kidle.c no substitute
