@@ -34,6 +34,8 @@ links:
 - role: build-dependency
   uid: ../../objmem
 - role: build-dependency
+  uid: ../../linkcmds
+- role: build-dependency
   uid: ../../opto2
 - role: build-dependency
   uid: ../../bspopts
