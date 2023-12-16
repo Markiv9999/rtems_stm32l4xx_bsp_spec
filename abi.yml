@@ -10,9 +10,6 @@ default:
 - enabled-by: true
   value:
   - -mcpu=cortex-m4
-  - -mthumb
-  - -mfloat-abi=hard
-  - -mfpu=auto
 description: |
   ABI flags
 enabled-by: true
