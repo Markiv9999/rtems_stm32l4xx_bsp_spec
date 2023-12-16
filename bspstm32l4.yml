@@ -18,7 +18,7 @@ install:
   - bsps/arm/stm32l4/include/bsp/irq.h
 - destination: ${BSP_LIBDIR}
   source:
-  - bsps/arm/stm32l4/start/linkcmds
+  - bsps/arm/stm32l4/start/linkcmds.stm32l4
 links:
 - role: build-dependency
   uid: abi
