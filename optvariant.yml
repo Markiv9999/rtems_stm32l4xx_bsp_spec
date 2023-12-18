@@ -1,0 +1,28 @@
+SPDX-License-Identifier: CC-BY-SA-4.0 OR BSD-2-Clause
+actions:
+- get-string: null
+- script: |
+    variants = ["STM32L4R9xx"]
+    if value not in variants:
+        conf.fatal(
+            "STM32L4 chip variant '{}' is not one of {}".format(
+                value, variants
+            )
+        )
+    conf.define_cond(value, True)
+build-type: option
+copyrights:
+- Copyright (C) 2020 embedded brains GmbH & Co. KG
+default:
+- enabled-by:
+  - arm/stm32l4r9
+  value: STM32L4R9xx
+- enabled-by: true
+  value: STM32L4R9xx
+description: |
+  Select the STM32L4 series chip variant out of STM32L4R9,.
+enabled-by: true
+format: '{}'
+links: []
+name: STM32L4_VARIANT
+type: build
