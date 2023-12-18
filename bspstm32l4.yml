@@ -40,10 +40,11 @@ links:
 - role: build-dependency
   uid: ../../bspopts
 source:
-  #- bsps/m68k/av5282/btimer/btimer.c
+- bsps/arm/shared/clock/clock-armv7m.c
+- bsps/arm/shared/irq/irq-armv7m.c
+- bsps/arm/shared/irq/irq-dispatch-armv7m.c
 - bsps/shared/dev/btimer/btimer-cpucounter.c
   #- bsps/m68k/av5282/clock/clock.c
-- bsps/arm/shared/clock/clock-armv7m.c
 - bsps/arm/stm32l4/console/console.c
 - bsps/arm/stm32l4/start/bspstart.c
   #- bsps/m68k/av5282/start/init5282.c no substitute
