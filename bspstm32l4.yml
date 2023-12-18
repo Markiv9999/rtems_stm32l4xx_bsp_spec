@@ -53,6 +53,7 @@ source:
 - bsps/arm/stm32l4/console/console.c
 - bsps/arm/stm32l4/start/bspstart.c
 - bsps/arm/stm32l4/start/bspstarthooks.c
+- bsps/arm/stm32l4/aboard-stm32l4r9/system_stm32l4xx.c
   #- bsps/m68k/av5282/start/init5282.c no substitute
   #- bsps/m68k/shared/cache/cache-mcf5282.c no substitute
   #- bsps/m68k/shared/m68kidle.c no substitute
