@@ -54,16 +54,11 @@ source:
 - bsps/arm/stm32l4/start/bspstart.c
 - bsps/arm/stm32l4/start/bspstarthooks.c
 - bsps/arm/stm32l4/boards/aboard-stm32l4r9/system_stm32l4xx.c
-  #- bsps/m68k/av5282/start/init5282.c no substitute
-  #- bsps/m68k/shared/cache/cache-mcf5282.c no substitute
-  #- bsps/m68k/shared/m68kidle.c no substitute
-  #- bsps/m68k/shared/memProbe.c no substitute
-  #- bsps/shared/dev/getentropy/getentropy-cpucounter.c no substitute
+  # 
+- bsps/shared/irq/irq-default-handler.c
 - bsps/shared/start/bspfatal-default.c
-  #- bsps/shared/start/bspreset-loop.c
 - bsps/arm/shared/start/bspreset-armv7m.c
 - bsps/shared/start/gettargethash-default.c
 - bsps/shared/start/sbrk.c
-  #- bsps/shared/start/setvec.c
 - bsps/shared/start/stackalloc.c
 type: build
