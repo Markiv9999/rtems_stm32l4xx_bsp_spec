@@ -47,6 +47,7 @@ source:
   #- bsps/m68k/av5282/clock/clock.c
 - bsps/arm/stm32l4/console/console.c
 - bsps/arm/stm32l4/start/bspstart.c
+- bsps/arm/stm32l4/start/bspstarthooks.c
   #- bsps/m68k/av5282/start/init5282.c no substitute
   #- bsps/m68k/shared/cache/cache-mcf5282.c no substitute
   #- bsps/m68k/shared/m68kidle.c no substitute
