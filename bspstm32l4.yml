@@ -13,6 +13,8 @@ install:
 - destination: ${BSP_INCLUDEDIR}
   source:
   - bsps/arm/stm32l4/include/bsp.h
+  - bsps/arm/stm32l4/include/stm32l4r9xx.h
+  - bsps/arm/stm32l4/include/system_stm32l4xx.h
 - destination: ${BSP_INCLUDEDIR}/bsp
   source:
   - bsps/arm/stm32l4/include/bsp/irq.h
