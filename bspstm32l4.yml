@@ -16,6 +16,7 @@ install:
   - bsps/arm/stm32l4/include/stm32l4xx.h
   - bsps/arm/stm32l4/include/stm32l4r9xx.h
   - bsps/arm/stm32l4/include/system_stm32l4r9xx.h
+  - bsps/arm/stm32l4/console/hal_uart.h # HACK: temporary and crude
 - destination: ${BSP_INCLUDEDIR}/bsp
   source:
   - bsps/arm/stm32l4/include/bsp/irq.h
