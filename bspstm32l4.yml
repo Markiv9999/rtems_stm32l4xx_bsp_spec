@@ -49,7 +49,8 @@ source:
 - bsps/arm/shared/clock/clock-armv7m.c
 - bsps/arm/shared/irq/irq-armv7m.c
 - bsps/arm/shared/irq/irq-dispatch-armv7m.c
-- bsps/shared/dev/btimer/btimer-cpucounter.c #TODO: try to remove
+- bsps/shared/dev/btimer/btimer-cpucounter.c #Minimal set up to here?
+- bsps/shared/dev/serial/console-termios.c
   # family specific sourcefiles
 - bsps/arm/stm32l4/console/console.c
 - bsps/arm/stm32l4/start/bspstart.c
