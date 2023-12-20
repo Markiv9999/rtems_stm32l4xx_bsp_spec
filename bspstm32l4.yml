@@ -25,11 +25,11 @@ install:
       #- bsps/arm/stm32l4/start/linkcmds.stm32l4
 links:
 - role: build-dependency
+  uid: ../grp
+- role: build-dependency
   uid: abi
 - role: build-dependency
   uid: start
-- role: build-dependency
-  uid: ../grp
 - role: build-dependency
   uid: ../../obj
 - role: build-dependency
