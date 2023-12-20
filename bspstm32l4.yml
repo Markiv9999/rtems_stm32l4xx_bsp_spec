@@ -59,6 +59,7 @@ source:
   # 
 - bsps/shared/irq/irq-default-handler.c
 - bsps/shared/start/bspfatal-default.c
+- bsps/arm/shared/start/bsp-start-memcpy.S
 - bsps/arm/shared/start/bspreset-armv7m.c
 - bsps/shared/start/gettargethash-default.c
 - bsps/shared/start/sbrk.c
