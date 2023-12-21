@@ -9,6 +9,7 @@ copyrights:
 default:
 - enabled-by: true
   value:
+  - -mthumb
   - -mcpu=cortex-m4
 description: |
   ABI flags
