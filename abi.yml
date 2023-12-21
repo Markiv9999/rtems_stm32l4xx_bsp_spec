@@ -10,7 +10,6 @@ default:
 - enabled-by: true
   value:
   - -mcpu=cortex-m4
-  - -mthumb
 description: |
   ABI flags
 enabled-by: true
