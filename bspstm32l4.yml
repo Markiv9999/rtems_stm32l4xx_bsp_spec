@@ -39,7 +39,7 @@ links:
 - role: build-dependency
   uid: ../../linkcmds
 - role: build-dependency
-  uid: ../../opto2
+  uid: ../../opto0
 - role: build-dependency
   uid: ../../bspopts
 - role: build-dependency
