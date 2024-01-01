@@ -20,7 +20,7 @@ install:
   - bsps/arm/stm32l4/include/stm32l4r9_module_mspi.h
   - bsps/arm/stm32l4/include/stm32l4r9_module_mspi_mt29.h
   - bsps/arm/stm32l4/include/ext_error_codes.h
-  - bsps/arm/stm32l4/include/typedefs.h
+  - bsps/arm/stm32l4/include/ext_typedefs.h
 - destination: ${BSP_INCLUDEDIR}/bsp
   source:
   - bsps/arm/stm32l4/include/bsp/irq.h
