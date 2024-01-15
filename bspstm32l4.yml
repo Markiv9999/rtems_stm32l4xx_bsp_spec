@@ -64,7 +64,7 @@ install:
   - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_rcc.h
   - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_system.h
   - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_utils.h
-  - bsps/arm/stm32l4/include/st_hal/Legacy/stm32_hal_legacy.h
+  - bsps/arm/stm32l4/include/st_hal/stm32_hal_legacy.h
 
 - destination: ${BSP_INCLUDEDIR}/bsp
   source:
