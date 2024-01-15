@@ -23,6 +23,49 @@ install:
   - bsps/arm/stm32l4/include/stm32l4r9_module_dcmi.h
   - bsps/arm/stm32l4/include/ext_error_codes.h
   - bsps/arm/stm32l4/include/ext_typedefs.h
+  # st hal includes
+- destination: ${BSP_INCLUDEDIR}
+  source:
+  - bsps/arm/stm32l4/include/st_hal/dcmi.h
+  - bsps/arm/stm32l4/include/st_hal/gpio.h
+  - bsps/arm/stm32l4/include/st_hal/i2c.h
+  - bsps/arm/stm32l4/include/st_hal/main.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_conf.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_cortex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_dcmi.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_def.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_dma_ex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_dma.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_exti.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_flash_ex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_flash.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_flash_ramfunc.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_gpio_ex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_gpio.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_i2c_ex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_i2c.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_pwr_ex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_pwr.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_rcc_ex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_rcc.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_tim_ex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_hal_tim.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_it.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_bus.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_cortex.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_crs.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_dma.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_dmamux.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_exti.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_gpio.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_i2c.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_pwr.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_rcc.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_system.h
+  - bsps/arm/stm32l4/include/st_hal/stm32l4xx_ll_utils.h
+  - bsps/arm/stm32l4/include/st_hal/Legacy/stm32_hal_legacy.h
+
 - destination: ${BSP_INCLUDEDIR}/bsp
   source:
   - bsps/arm/stm32l4/include/bsp/irq.h
@@ -63,10 +106,35 @@ source:
 - bsps/arm/stm32l4/start/bspstarthooks.c
 - bsps/arm/stm32l4/boards/aboard-stm32l4r9/system_stm32l4xx.c
 - bsps/arm/stm32l4/clock/stm32l4r9_module_clk_config.c
-- bsps/arm/stm32l4/hal/stm32l4r9_module_mspi.c
-- bsps/arm/stm32l4/hal/stm32l4r9_module_mspi_mt29.c
-- bsps/arm/stm32l4/hal/stm32l4r9_module_dcmi.c
-  # 
+- bsps/arm/stm32l4/modules/stm32l4r9_module_mspi.c
+- bsps/arm/stm32l4/modules/stm32l4r9_module_mspi_mt29.c
+- bsps/arm/stm32l4/modules/stm32l4r9_module_dcmi.c
+  # st hal sourcefiles 
+- bsps/arm/stm32l4/st_hal/dcmi.c
+- bsps/arm/stm32l4/st_hal/gpio.c
+- bsps/arm/stm32l4/st_hal/i2c.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_cortex.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_dcmi.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_dma.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_dma_ex.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_exti.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_flash.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_flash_ex.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_flash_ramfunc.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_gpio.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_i2c.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_i2c_ex.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_msp.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_pwr.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_pwr_ex.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_rcc.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_rcc_ex.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_tim.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_hal_tim_ex.c
+- bsps/arm/stm32l4/st_hal/stm32l4xx_it.c
+- bsps/arm/stm32l4/st_hal/system_stm32l4xx.c
+  # final shared sourcefiles
 - bsps/shared/irq/irq-default-handler.c
 - bsps/shared/start/bspfatal-default.c
 - bsps/arm/shared/start/bsp-start-memcpy.S
