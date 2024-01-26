@@ -18,8 +18,11 @@ install:
   - bsps/arm/stm32l4/include/system_stm32l4xx.h
   - bsps/arm/stm32l4/console/hal_uart.h # HACK: temporary and crude
   - bsps/arm/stm32l4/include/stm32l4r9_module_clk_config.h
+  - bsps/arm/stm32l4/include/hwlist_agent.h
+  - bsps/arm/stm32l4/include/hwlist_handlers.h
   - bsps/arm/stm32l4/include/stm32l4r9_module_mspi.h
   - bsps/arm/stm32l4/include/stm32l4r9_module_mspi_mt29.h
+  - bsps/arm/stm32l4/include/stm32l4r9_module_i2c.h
   - bsps/arm/stm32l4/include/stm32l4r9_module_dcmi.h
   - bsps/arm/stm32l4/include/ext_error_codes.h
   - bsps/arm/stm32l4/include/ext_typedefs.h
@@ -108,9 +111,12 @@ source:
 - bsps/arm/stm32l4/start/bspstarthooks.c
 - bsps/arm/stm32l4/boards/aboard-stm32l4r9/system_stm32l4xx.c
 - bsps/arm/stm32l4/clock/stm32l4r9_module_clk_config.c
+- bsps/arm/stm32l4/modules/hwlist_agent.c
+- bsps/arm/stm32l4/modules/hwlist_handlers.c
 - bsps/arm/stm32l4/modules/stm32l4r9_module_mspi.c
 - bsps/arm/stm32l4/modules/stm32l4r9_module_mspi_mt29.c
 - bsps/arm/stm32l4/modules/stm32l4r9_module_dcmi.c
+- bsps/arm/stm32l4/modules/stm32l4r9_module_i2c.c
   # st hal sourcefiles 
 - bsps/arm/stm32l4/st_hal/dcmi.c
 - bsps/arm/stm32l4/st_hal/gpio.c
