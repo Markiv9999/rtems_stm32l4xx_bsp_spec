@@ -23,11 +23,10 @@ install:
   - bsps/arm/stm32l4/include/stm32l4r9_module_mspi_mt29.h
   - bsps/arm/stm32l4/include/stm32l4r9_module_i2c.h
   - bsps/arm/stm32l4/include/stm32l4r9_module_dcmi.h
+  - bsps/arm/stm32l4/include/stm32l4r9_module_ov5640.h
   - bsps/arm/stm32l4/include/stm32l4r9_module_uart.h #HACK: Hacky, temporary
   - bsps/arm/stm32l4/include/ext_error_codes.h
   - bsps/arm/stm32l4/include/ext_typedefs.h
-  - bsps/arm/stm32l4/include/ov5640.h
-  - bsps/arm/stm32l4/include/ov5640_reg.h
   # st hal includes
 - destination: ${BSP_INCLUDEDIR}
   source:
@@ -116,6 +115,7 @@ source:
 - bsps/arm/stm32l4/modules/stm32l4r9_module_mspi.c
 - bsps/arm/stm32l4/modules/stm32l4r9_module_mspi_mt29.c
 - bsps/arm/stm32l4/modules/stm32l4r9_module_dcmi.c
+- bsps/arm/stm32l4/modules/stm32l4r9_module_ov5640.c
 - bsps/arm/stm32l4/modules/stm32l4r9_module_i2c.c
 - bsps/arm/stm32l4/modules/stm32l4r9_module_uart.c
   # st hal sourcefiles 
