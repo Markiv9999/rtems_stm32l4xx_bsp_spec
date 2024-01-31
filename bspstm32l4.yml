@@ -31,7 +31,7 @@ install:
 - destination: ${BSP_INCLUDEDIR}
   source:
   - bsps/arm/stm32l4/include/bsp/irq.h
-  - bsps/arm/stm32l4/include/Legacy/stm32_hal_legacy.h
+  - bsps/arm/stm32l4/include/stm32l4/hal.h
   - bsps/arm/stm32l4/include/console.h
   - bsps/arm/stm32l4/include/dcmi.h
   - bsps/arm/stm32l4/include/dma.h
@@ -77,6 +77,10 @@ install:
   - bsps/arm/stm32l4/include/stm32l4xx_ll_usart.h
   - bsps/arm/stm32l4/include/stm32l4xx_ll_utils.h
   - bsps/arm/stm32l4/include/usart.h
+
+- destination: ${BSP_INCLUDEDIR}/Legacy
+  source:
+  - bsps/arm/stm32l4/include/Legacy/stm32_hal_legacy.h
 
 - destination: ${BSP_INCLUDEDIR}/bsp
   source:
@@ -128,8 +132,6 @@ source:
 - bsps/arm/stm32l4/modules/stm32l4r9_module_uart.c
   # eredited source files from h7 bsp
 - bsps/arm/stm32l4/console/console.c
-- bsps/arm/stm32l4/console/console-usart2.c
-- bsps/arm/stm32l4/console/console-usart2-cfg.c
 - bsps/arm/stm32l4/console/printk-support.c
   # st hal sourcefiles 
 - bsps/arm/stm32l4/st_hal/dcmi.c
@@ -161,6 +163,7 @@ source:
 - bsps/arm/stm32l4/st_hal/stm32l4xx_it.c
 - bsps/arm/stm32l4/st_hal/system_stm32l4xx.c
 - bsps/arm/stm32l4/st_hal/usart.c
+- bsps/arm/stm32l4/start/stm32l4-hal.c
   # final shared sourcefiles
 - bsps/shared/irq/irq-default-handler.c
 - bsps/shared/start/bspfatal-default.c
