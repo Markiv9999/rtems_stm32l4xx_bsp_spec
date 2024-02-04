@@ -109,6 +109,9 @@ links:
   uid: ../../bspopts
 - role: build-dependency
   uid: optvariant
+  #- role: build-dependency
+    #Euid: ../../opto2
+
 source:
   # initial shared sourcefiles
 - bsps/arm/shared/clock/clock-armv7m.c
@@ -138,7 +141,6 @@ source:
 - bsps/arm/stm32l4/st_hal/dma.c
 - bsps/arm/stm32l4/st_hal/gpio.c
 - bsps/arm/stm32l4/st_hal/i2c.c
-- bsps/arm/stm32l4/st_hal/main.c
 - bsps/arm/stm32l4/st_hal/stm32l4xx_hal.c
 - bsps/arm/stm32l4/st_hal/stm32l4xx_hal_cortex.c
 - bsps/arm/stm32l4/st_hal/stm32l4xx_hal_dcmi.c
